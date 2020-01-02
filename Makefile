@@ -21,5 +21,5 @@ endif
 dev-server:
 	tmux new-session -s dev -d "cd client && hugo server -D --disableFastRender"
 	tmux new-window -t dev "cd client/js_src && npm run watch"
-	#	tmux new-window -t dev "cd server && iex -S mix"
+	tmux new-window -t dev "cd server/api && iex -S mix"
 	tmux attach -t dev

@@ -28,6 +28,6 @@ sleep 5
 git push origin master --force
 
 echo "Installing frontend dependencies..."
-cd client/ && npm install && cd js_src && npm install --dev
-
+cd client/ && npm install && cd js_src && npm install --dev && npm install
+cd ../..
 Echo "Congrats! Enjoy an awesome dev setup."
