@@ -4,4 +4,5 @@ author = "Luke Wood"
 googleAnalytics=''
 
 [params]
-  favicon = "/icons/FAVICON"
+  #favicon = "/icons/rounded.png"
+  description = "Boilerplate generated site"
