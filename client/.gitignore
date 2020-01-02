@@ -1,0 +1,5 @@
+node_modules
+public
+assets/js/app.js
+assets/js/app.js.map
+resources/_gen

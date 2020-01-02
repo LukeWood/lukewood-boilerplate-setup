@@ -26,3 +26,8 @@ git commit -m "Initial commit"
 echo "Force pushing to master in 5 seconds"
 sleep 5
 git push origin master --force
+
+echo "Installing frontend dependencies..."
+cd client/ && npm install && cd js_src && npm install --dev
+
+Echo "Congrats! Enjoy an awesome dev setup."

@@ -1,8 +1,5 @@
 all: deploy-client
 
-none-unstaged-client:
-	git diff-index --quiet HEAD
-
 build-client:
 	cd client/js_src && npm run build
 	cd client && hugo
@@ -20,3 +17,9 @@ ifndef HOST
 	$(error HOST is not set)
 endif
 	true
+
+dev-server:
+	tmux new-session -s dev -d "cd client && hugo server -D --disableFastRender"
+	tmux new-window -t dev "cd client/js_src && npm run watch"
+	#	tmux new-window -t dev "cd server && iex -S mix"
+	tmux attach -t dev

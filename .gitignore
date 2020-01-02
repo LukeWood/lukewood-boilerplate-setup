@@ -1,0 +1,7 @@
+erl_crash.dump
+fprof.trace
+tests.out
+deps/
+_build/
+mix.lock
+*.swp

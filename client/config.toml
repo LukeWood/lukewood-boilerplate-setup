@@ -1,0 +1,7 @@
+relativeURLs = true
+disableKinds = ["taxonomy", "taxonomyTerm", "categories", "tags"]
+author = "Luke Wood"
+googleAnalytics=''
+
+[params]
+  favicon = "/icons/FAVICON"
