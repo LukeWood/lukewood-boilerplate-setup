@@ -9,7 +9,7 @@ Usage:
 fi
 
 echo "Removing .git"
-# rm -rf .git
+rm -rf .git
 
 echo "Initializing new repo"
 git init
