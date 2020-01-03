@@ -6,6 +6,7 @@ Usage:
 
   REPO=your_git_repo ./run_me_once.sh
 "
+  exit
 fi
 
 echo "Removing .git"
